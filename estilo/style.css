@@ -19,6 +19,7 @@
 body{
     background-color: var(--cor3);
     font-family: var(--font1);
+    font-size: 1em;
 }
 
 header{
@@ -29,7 +30,7 @@ header{
 header > h1{
     color: #fff;
     padding: 40px 20px 0px 20px;
-    font-size: 2.3em;
+    font-size: 3em;
     font-weight: 300;
     text-shadow: 3px 2px 4px rgba(000, 000, 000, 0.286);
 }
@@ -41,7 +42,7 @@ header > h2{
 
 main{
     margin: auto;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 section{
@@ -51,7 +52,7 @@ section{
 }
 section > h1{
     color: #000;
-    font-size: 1.7em;
+    font-size: 2.3em;
     text-align: center;
     font-weight: 300;
     padding: 5px;
@@ -91,7 +92,7 @@ article > h1{
     background-color: var(--cor1);
     color: white;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 300;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363);
     padding: 5px;
@@ -114,7 +115,7 @@ div.exemplo{
 }
 
 aside h2{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-variant: small-caps;
     text-align: left;
     padding: 15px 5px 1px 5px;
