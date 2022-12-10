@@ -110,7 +110,7 @@ article .parametro{
 }
 div.exemplo{
     margin: auto;
-    max-width: 340px;
+    max-width: 400px;
     border: 1px solid black;
 }
 
@@ -128,7 +128,7 @@ aside.editor div > pre{
 }
 div.rolagem{
     background-color: black;
-    max-width: 300px;
+    max-width: 360px;
     margin: auto;
     overflow-x: auto;
 }
@@ -136,7 +136,7 @@ div.rolagem{
 .navegador > ol, .navegador ul, .navegador dl{
     list-style-position: inside;
     margin: auto;
-    max-width: 300px;
+    max-width: 360px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-family: var(--font2);
