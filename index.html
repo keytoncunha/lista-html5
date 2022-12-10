@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="imagem/icone-fovorito.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Listas</h1>
+        <h2>HTML5 e CSS3</h2>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Listas com HTML</h1>
+            <blockquote>
+                <ul>
+                    <li>Listas são importantes.</li>
+                    <li>Facilitam a Leitura.</li>
+                    <li>Organizam o conteúdo.</li>
+                    <li>Simplificam a apresentação dos itens.</li>
+                </ul>
+            </blockquote>
+            <article>
+                <h1>Listas Ordenadas</h1>
+                <p>
+                    A HTML chama de <ins>Ordered Lists</ins> todas aquelas listas onde a ordem dos itens é algo muito importante. Um passo-a-passo para criar um bolo, uma listas de aprovados no vestibular e uma listas com carros mais caros do mundo são exemplos de listas ordenadas.
+                </p>
+                <p>
+                    Para criar uma ordered list, vamos usar a tag &lt;ol&gt; para delimitar a lista e &lt;li&gt; (list item) para identificar cada item na lista.
+                </p>
+                <div class="exemplo">
+                <aside class="editor">
+                    <h2>Código no Editor</h2>
+<div class="rolagem"><pre><code>
+&lt;ol&gt;
+        &lt;li&gt; Item I &lt;/li&gt;
+        &lt;li&gt; Item II &lt;/li&gt;
+        &lt;li&gt; Item III &lt;/li&gt;
+        &lt;li&gt; Item IV &lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></div>
+                </aside>
+                <aside class="navegador">
+                    <h2>Resultado no Navegador</h2>
+                    <ol>
+                        <li> Item I </li>
+                        <li> Item II </li>
+                        <li> Item III </li>
+                        <li> Item IV </li>
+                    </ol>
+                </aside>
+                </div>
+                <p>
+                   A tag &lt;ol&gt; possui um parâmetro <ins>type</ins>, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são: <strong>1 - A - a - I - i</strong>
+                </p>
+                <ul class="parametro">
+                    <li><strong>1_</strong>Valor padrão. Cria listas numeradas. ( 1,2,3,4...)</li>
+                    <li><strong>A_</strong>Cria listas alfabéticas em maiúscula. ( A,B,C,D...)</li>
+                    <li><strong>a_</strong>Cria listas alfabéticas em minúcula. ( a,b,c,d...)</li>
+                    <li><strong>I_</strong>Cria listas em algorismos romanos em maiúsculas. ( I,II,III,IV...)</li>
+                    <li><strong>i_</strong>Cria listas em algorismos romanos em minúculas. ( i,ii,iii,iv...)</li>
+                </ul>
+                <p>
+                    Você também pode indicar o início da contagem usando o parâmetro <code>start.</code>
+                </p>
+                <p>
+                    Por exemplo, a tag <code>&lt;ol type="I" start="5"&gt;</code> vai gerar itens numerados como v, vi, vii, viii, ix...
+                </p>
+            </article>
+
+            <article>
+                <h1>Listas não Ordenadas</h1>
+                <p>
+                    <ins>Unordered Lists</ins>, também chamadas de listas com marcadores, que são aquelas onde a ordem dos itens não influenciará no significado da lista.
+                </p>
+                <p>
+                    Para criar uma Unordered List, vamos usar a tag &lt;ul&gt; para delimitar a lista e a tag &lt;li&gt; para criar cada um de seus itens internos.
+                </p>
+                <div class="exemplo">
+                <aside class="editor">
+                    <h2>Código no Editor</h2>
+<div class="rolagem"><pre><code>
+&lt;ul&gt;
+        &lt;li&gt; Item I &lt;/li&gt;
+        &lt;li&gt; Item II &lt;/li&gt;
+        &lt;li&gt; Item III &lt;/li&gt;
+        &lt;li&gt; Item IV &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div>     
+            </aside>
+                <aside class="navegador">
+                    <h2>Resultado no Navegador</h2>
+                    <ul>
+                        <li> Item I </li>
+                        <li> Item II </li>
+                        <li> Item III </li>
+                        <li> Item IV </li>
+                </ul>
+                </aside></div>
+                <p>
+                    O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade <ins>type</ins> da tag &lt;ul&gt;
+                </p>
+                <ul class="parametro">
+                    <li><strong>disc_</strong>Padrão. Uma bola preta totalmente pintada.</li>
+                    <li><strong>circle_</strong>Uma bola com uma borda preta e sem preenchimento.</li>
+                    <li><strong>square_</strong>Um pequeno quadrado preto totalmente pintado.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h1>Misturando as Coisas</h1>
+                <p>
+                    Podemos criar listas mistas, configurando listas dentro de outras listas.
+                </p>
+                <div class="exemplo">
+                <aside class="editor">
+                    <h2>Código no Editor</h2>
+<div class="rolagem"><pre><code>
+&lt;ol&gt;
+        &lt;li&gt; Item 1 &lt;/li&gt;
+        &lt;li&gt; Item 2 &lt;/li&gt;
+        &lt;ol type="a"&gt;
+            &lt;li&gt; Item 2.1 &lt;/li&gt;
+            &lt;li&gt; Item 2.2 &lt;/li&gt;
+            &lt;li&gt; Item 2.3 &lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;li&gt; Item 3 &lt;/li&gt;
+        &lt;li&gt; Item 4 &lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></div>
+                </aside>
+                <aside class="navegador">
+                    <h2>Resultado no Navegador</h2>
+                    <ol>
+                        <li> Item 1 </li>
+                        <li> Item 2 </li>
+                        <ol type="a" style="padding-left: 25px;">
+                            <li> Item 2.1 </li>
+                            <li> Item 2.2 </li>
+                            <li> Item 2.3 </li>
+                        </ol>
+                        <li> Item 3 </li>
+                        <li> Item 4 </li>
+                    </ol>
+                </aside>
+                </div>
+                <p>
+                    Note que os itens da lista interna (a,b,c) está desloccado para a direita em relação ao item 2, do qual essa lista é filha.
+                </p>
+            </article>
+
+            <article>
+                <h1>Listas de Definições</h1>
+                <p>
+                    É como se fosse um dicionário, temos os <ins>termos</ins> e as suas <ins>descrições</ins>. É uma lista sem demarcadores, mas bem útil em alguns casos.
+                </p>
+                <p>
+                    Toda lista de definições está dentro de uma tag &lt;dl&gt; &lt;/dl&gt; (definition list). Cada termo é um &lt;dt&gt; (definition term) e cada descrição é um &lt;dd&gt; (definition description). Assim como os itens da lista, essas duas últimas tags possuem fechamento opciona, segundo a referência da HTML.
+                </p>
+                <div class="exemplo">
+                <aside class="editor">
+                    <h2>Código no Editor</h2>
+<div class="rolagem"><pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Linguagem de Marcação de
+        Hipertexto&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Folhas de Estilos em
+        Cascata&lt;/dd&gt;
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+        &lt;dd&gt;Linguagem de Programação
+        Para criar interatividade&lt;dd&gt;
+&lt;/dl&gt;
+</code></pre></div>
+                </aside>
+                <aside class="navegador">
+                    <h2>Resultado no Navegador</h2>
+                    <dl>
+                        <dt>HTML</dt>
+                            <dd>Linguagem de Marcação de Hipertexto</dd>
+                        <dt>CSS</dt>
+                            <dd>Folhas de Estilos em Cascata</dd>
+                        <dt>JavaScript</dt>
+                            <dd>Linguagem de Programação Para criar interatividade<dd>
+                    </dl>
+                </aside>
+                </div>
+                <p>
+                    Cada navegador pode mostrar um resultado ligeiramente diferente para listas de definições, mas o que mais importa é o significado desse tipo de listagem, pois ele relaciona diretamente os pares TERMO + DESCRIÇÃO e isso nos ajuda bastante com mecanismo de busca.
+                </p>
+            </article>
+            <p>
+                <ins>IMPORTANTE!</ins> Segundo a W3C, a tag &lt;ol&gt; é de fechamento obrigatório. Já a tag &lt;li&gt; tem seu fechamento opcional a partir da HTML5.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/keytoncunha" target="_blank" rel="external" >Dev. Keyton Cunha</a></p>
+    </footer>
+</body>
+</html>
